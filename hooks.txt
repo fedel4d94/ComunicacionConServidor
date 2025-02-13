@@ -1,0 +1,38 @@
+useState: Manejo de estados
+¿Qué hace?
+Permite crear y gestionar el estado de un componente. El estado es como una "memoria interna" donde puedes guardar datos que cambian mientras el componente está activo (por ejemplo, un contador, el texto de un input, etc.).
+
+¿Cuándo usarlo?
+Úsalo cuando necesites guardar información y actualizarla, como:
+
+El número de clics en un botón.
+El contenido de un formulario.
+La lista de elementos de una API que quieres mostrar.
+
+useEffect: Manejo de efectos secundarios
+¿Qué hace?
+Permite ejecutar código extra en ciertos momentos del ciclo de vida del componente, como:
+
+Cuando el componente se monta (inicializa).
+Cuando se actualiza algo en el componente.
+Cuando el componente se desmonta (desaparece).
+¿Cuándo usarlo?
+Úsalo cuando necesites que React haga algo después de renderizar el componente o cuando algo cambie, como:
+
+Llamar a una API para obtener datos.
+Actualizar el título de la página.
+Configurar o limpiar un temporizador.
+
+Relación entre useState y useEffect
+A menudo trabajan juntos:
+
+Usas useState para guardar datos (como el resultado de una API).
+Usas useEffect para buscar esos datos cuando el componente se monta.
+
+Resumen fácil:
+useState: Es para guardar datos.
+useEffect: Es para hacer algo cuando esos datos (u otras cosas) cambian o cuando el componente aparece/desaparece.
+
+
+
+ "github.copilot.editor.enableAutoCompletions": false, esta deshabilitado el enableAutoCompletions

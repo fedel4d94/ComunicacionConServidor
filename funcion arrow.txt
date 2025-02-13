@@ -1,0 +1,22 @@
+Definir una función de callback:
+
+.then(returnedPerson => {
+    console.log('Returned Person:', returnedPerson);
+    setPersons(persons.map(person => person.id !== personUpdate.id ? person : returnedPerson));
+})
+
+
+El código returnedPerson => { ... } significa: "Cuando personaService.update termine y devuelva un resultado
+ (el objeto returnedPerson), ejecuta esta función con returnedPerson como argumento."
+Es lo mismo que escribirlo con la palabra clave function:
+
+
+.then(function(returnedPerson) {
+    console.log('Returned Person:', returnedPerson);
+    setPersons(persons.map(person => person.id !== personUpdate.id ? person : returnedPerson));
+})
+
+Recibir el resultado de la promesa:
+
+personaService.update devuelve una promesa que contiene un objeto cuando se resuelve (en este caso, returnedPerson).
+Este objeto returnedPerson es pasado automáticamente como argumento a la función flecha.
